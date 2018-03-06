@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerFilter"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarFilter"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:title="Filtra"
+        app:titleTextColor="@android:color/white">
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/toolbarFilter"
+        android:id="@+id/recyclerViewCategoryFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

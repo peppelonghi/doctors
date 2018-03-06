@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/shape_black"
+    android:orientation="vertical">
+
+
+
+    <View
+        android:id="@+id/lineEnd"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorPrimaryLight"></View>
+
+    <TextView
+        android:background="@color/colorPrimary"
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:text="Lunedi"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+
+
+    <TextView
+        android:id="@+id/morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Mattina:"
+        android:textColor="@color/colorPrimaryText" />
+
+    <TextView
+        android:id="@+id/valueMorning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/morning"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:text="dalle 08:00-12:00" />
+
+
+    <TextView
+        android:id="@+id/afternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueMorning"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Pomeriggio: "
+        android:textColor="@color/colorPrimaryText" />
+
+    <TextView
+        android:id="@+id/valueAfternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/afternoon"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:text="dalle 08:00-12:00" />
+</RelativeLayout>

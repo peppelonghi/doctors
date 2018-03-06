@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner_mornig_afternoon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"></Spinner>
+
+    <LinearLayout
+        android:id="@+id/containerOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_mornig_afternoon"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:timePickerMode="spinner">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/from"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryText" />
+
+        <Spinner
+            android:id="@+id/spinnerHourMorningOpening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/from" />
+
+        <TextView
+            android:id="@+id/duepunti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spinnerHourMorningOpening"
+            android:text=":"
+            android:textColor="@color/colorPrimaryText" />
+
+        <Spinner
+            android:id="@+id/spinnerMinuteMorningOpening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/duepunti" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/containerOpen"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/til"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spinnerMinuteMorningOpening"
+            android:text="@string/til"
+            android:textColor="@color/colorPrimaryText" />
+
+        <Spinner
+            android:id="@+id/spinnerHourMorningClosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/til" />
+
+        <TextView
+            android:id="@+id/duepunti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spinnerHourMorningClosed"
+            android:text=":"
+            android:textColor="@color/colorPrimaryText" />
+
+        <Spinner
+            android:id="@+id/spinnerMinuteMorningClosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/duepunti2" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_state">
+        <item>Mattina </item>
+        <item>Pomeriggio </item>
+    </string-array>
+
+</resources>
